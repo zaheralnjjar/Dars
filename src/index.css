@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f6f0;
+    color: #1a2e26;
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+.font-kufi {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+/* Luxurious Light Islamic Manuscript Background Pattern */
+.islamic-pattern {
+  background-color: #f7f5ed;
+  background-image: 
+    radial-gradient(rgba(180, 83, 9, 0.08) 1.2px, transparent 1.2px),
+    radial-gradient(rgba(6, 95, 70, 0.05) 1.2px, #f7f5ed 1.2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+/* Luxury Islamic Card with subtle gilding */
+.islamic-card-border {
+  background: #ffffff;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  box-shadow: 0 4px 20px -2px rgba(6, 78, 59, 0.06), 0 2px 8px -1px rgba(217, 119, 6, 0.05);
+}
+
+.islamic-card-border:hover {
+  border-color: rgba(217, 119, 6, 0.55);
+  box-shadow: 0 10px 30px -4px rgba(6, 78, 59, 0.12), 0 4px 14px -2px rgba(217, 119, 6, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Gilded manuscript frame */
+.gilded-frame {
+  position: relative;
+  border: 1px solid #d97706;
+  box-shadow: inset 0 0 0 1px rgba(217, 119, 6, 0.2), 0 4px 15px rgba(6, 95, 70, 0.05);
+}
+
+.gilded-frame::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  border: 1px solid rgba(180, 83, 9, 0.15);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #92400e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient-text {
+  background: linear-gradient(135deg, #047857 0%, #065f46 50%, #064e3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom refined scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 83, 9, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 83, 9, 0.6);
+}
